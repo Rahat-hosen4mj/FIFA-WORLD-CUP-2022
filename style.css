@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.banner{
+    width: 100%;
+    height: 580px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 2.5rem;
+    padding: 4rem;
+    background-color: rgba(14, 14, 150, 0.836);
+    color: #fff;
+}
+
+.banner-detail h1{
+    padding-top: 4rem;
+    font-size: 4rem;
+    line-height: 80px;
+    font-weight: 600;
+}
+.banner-detail button{
+padding: 15px 24px 15px 24px;
+background: #E02C6D;
+font-size: 1rem;
+text-transform: uppercase;
+color: #fff;
+margin-top: 1rem;
+border-radius: 5px;
+border: 0;
+}
+
+.banner-img img{
+    width: 95%;
+    padding-left: 2rem;
+}
+
+/* -------------------------
+    media query for mobile device
+--------------------------*/
+@media only screen and (max-width: 688px) {
+    .banner{
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 2rem;
+        background-color: red;
+    }
+    .banner-detail h1{
+        font-size: 2rem;
+    }
+    .banner-detail button{
+        font-size: .7rem;
+        font-weight: bold;
+    }
+    .banner-img img{
+        width: 100%;
+    }
+}
