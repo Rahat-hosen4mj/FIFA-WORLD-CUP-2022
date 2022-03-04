@@ -9,6 +9,38 @@
     <link rel="shortcut icon" href="images/FIFA_logo_blue.png" type="image/x-icon">
     <!----------- custom css ---------->
     <link rel="stylesheet" href="style.css">
+
+    <!-- style for animation -->
+    <style>
+        @keyframes linear-move {
+          0%{
+              background-color: #E02C6D;
+              left: 0;
+           
+          }
+          100%{
+              left: 60%;
+          }
+      }
+      .stage{
+          height: 3rem;
+          width: 80%;
+          margin-top: 2rem;
+          font-size: 1.5rem;
+      }
+      .fifa{
+          height: 3.5rem;
+          width: 140px;
+          border-radius: 5px;
+          padding-left:  .6rem;
+          display: flex;
+          align-items: center;
+          animation:  linear-move 2s ease-in .5s infinite alternate;
+          animation-play-state: running;
+          position: relative;
+          animation-duration: 4.5s;
+      }
+  </style>
 </head>
 <body>
     <header class="banner-section">
@@ -19,6 +51,9 @@
            <div class="banner-detail">
                 <h1>Conmebol <br> copa  america <br> 2022</h1>
                 <button>Watch live <span><i class="fa-solid fa-arrow-right-long"></i></span></button>
+                <div class="stage">
+                    <div class="fifa">FIFA 2022</div>
+                </div>
            </div>
            <div class="banner-img">
                <img src="images/banner.png" alt="">
